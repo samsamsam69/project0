@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Git</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <h1>Git</h1>
+    <h2>So, What's Git?</h2>
+    <p>Git a program that runs through the terminal (cmd in Windows). Git is a version control software - it can track
+    changes in the files of a repository. This can be helpful to programmers, as they can revert back to an earlier version of the software
+    if they need to.
+    </p>
+    <p>Here are some git commands that are frequently used:</p>
+    <table id="GitTable">
+      <thead>
+        <th>Commands</th>
+        <th>Function</th>
+      </thead>
+      <tr>
+        <td>git clone <i>your_url</i></td>
+        <td>Clones the repository from the URL into the specified local directory</td>
+      </tr>
+      <tr>
+        <td>git add <i>file_name</i></td>
+        <td>Tells Git to track files that are added</td>
+      </tr>
+      <tr>
+        <td>git commit -m "<i>your_message</i>"</td>
+        <td>Commits (saves) the files that were previously added. the "-m "<i>your_message</i>"" allows us to 'label' the commits,
+        so when referred back, we can see what changes are made in which commits</td>
+      </tr>
+      <tr>
+        <td>git init</td>
+        <td>Initialises Git when making new folder locally</td>
+      </tr>
+      <tr>
+        <td>git branch</td>
+        <td>Git will show all branches in the repository</td>
+      </tr>
+      <tr>
+        <td>git branch <i>branch_name</i></td>
+        <td>Makes new branch with a the specified <i>branch_name</i></td>
+      </tr>
+      <tr>
+        <td>git checkout <i>branch_name</i></td>
+        <td>"Selects" the specified <i>branch_name</i>. This changes made to the files will then take place in this branch, not others</td>
+      </tr>
+      <tr>
+        <td>git status</td>
+        <td>Checks for the status of the repository: if any files need to be committed, or the repository is up-to-date to the git</td>
+      </tr>
+      <tr>
+        <td>git log</td>
+        <td>Shows the history of commits of the repository</td>
+      </tr>
+    </table>
+  </body>
+</html>
