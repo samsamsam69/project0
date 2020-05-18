@@ -2,19 +2,68 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CSS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {margin: 10px 20% 0px 20%}
+      .home_link:before, .links:before {content:"Click here to go "}
+      .links:hover, .home_link:hover {color: deeppink}
+      #selectors th {color:darkblue}
+      td {color:blue}
+      td + td {color: blueviolet}
+    </style>
   </head>
   <body>
+    <h1>Cascading Stylesheet</h1>
+    <h2>Introduction</h2>
   <p>CSS, otherwise known as Cascading StyleSheet, is a language used to apply styling to a website. This would help the website look more aesthetically pleasing.
   However, CSS can also be a little inefficient when coding. We cannot make variables to shorten our codes. Thus, we can use SCSS files. SCSS allows
   us to give variables to stylings. However, this cannot be directly processed by web browsers. So, we need to use SASS, a software that can compile
   SCSS files into CSS files. We can also update to GitHub and will directly be compiled into CSS.</p>
-  <p>CSS also has selectors. This is used when we want to specifically choose elements to be styeld. Examples include:</p>
-  <table>
-    <ththead>
-      <th>CSS Selectors</th>
+  <h3>CSS Selectors</h3>
+  <p>CSS also has selectors. This is used when we want to specifically choose elements to be styled. Examples include:</p>
+  <table id="selectors">
+    <thead>
+      <th style="width: 140px">CSS Selectors</th>
+      <th style="width: 90px">Examples</th>
       <th>Functions</th>
-    </ththead>
+    </thead>
+    <tr>
+      <td>.class1 .class2</td>
+      <td>.intro .par1</td>
+      <td>Selects all of <i>par1</i> that are inside of <i>intro</i></td>
+    </tr>
+    <tr>
+      <td>element.class</td>
+      <td>p.intro</td>
+      <td>Selects all <i><</i><i>p></i> elements that has class name <i>intro></i></td>
+    </tr>
+    <tr>
+      <td>element, element</td>
+      <td>div, p</td>
+      <td>Selects all <i><</i><i>div></i> and <i><</i><i>p></i> elements </td>
+    </tr>
+    <tr>
+      <td>element element</td>
+      <td>div p</td>
+      <td>Selects all <i><</i><i>p></i> that are inside of <i><</i><i>div></i></td>
+    </tr>
+    <tr>
+      <td>element + element</td>
+      <td>div + p</td>
+      <td>Selects all <i><</i><i>p></i> that are placed after <i><</i><i>div></i></td>
+    </tr>
+    <tr>
+      <td>element > element</td>
+      <td>div > p</td>
+      <td>Selects all <i><</i><i>p></i> that are direct descendants of <i><</i><i>div></i></td>
+    </tr>
   </table>
+  <br>
+  <nav>
+    <a href="index.html" class="home_link">back to home</a><br>
+    <a href="Git.html" class="links">back to Git</a><br>
+    <a href="HTML.html" class="links">to HTML</a><br>
+  </nav>
 </body>
 </html>
