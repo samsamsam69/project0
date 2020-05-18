@@ -2,9 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {margin: 10px 20% 0px 20%}
+      .home_link:before, .links:before {content:"Click here to go "}
+      .links:hover, .home_link:hover {color: deeppink}
+    </style>
   </head>
   <body>
-
+    <h1>HTML</h1>
+    <h2>What's HTML?</h2>
+    <p>
+      HTML, or Hypertext Markup Language, is a language that are used to make websites. The most current version is HTML5.
+      HTML uses tags to tell the web browsers the properties of the text inside the tags.<br>
+      The most basic layout of writing HTML for a website is like this:
+    </p>
+    <img src="html.png">
+    <p>Now, let's break down what all this means.</p>
+    <p>The <b><i><</i><i>!DOCTYPE></i></b> tag is telling the browser that the HTML code used is HTML5</p>
+    <p>The <b><i><</i><i>head></i></b> tag is used to tell the browser that this is the head of the webpage.
+      Inside the <b><i><</i><i>head></i></b> tag, you can put in your <b><i>title</i></b>, by using the <b><i><</i><i>title></i></b> tag. You can also put
+      styles, by typing in CSS codes inside a <b><i><</i><i>style></i></b> tag, or linking the CSS stylesheet: <b><i><</i><i>link rel="stylesheet" href="<i>url</i>"></i></b>.
+    </p>
+    <p>
+      The <b><i><</i><i>body></i></b> tag is where all the content of the webpage are. All text, images, videos, audios, are all put inside this tag.
+    </p>
+    <nav>
+      <a href="index.html" class="home_link">back to home</a><br>
+      <a href="Git.html" class="links">back to Git</a><br>
+      <a href="css.html" class="links">to CSS</a><br>
+    </nav>
   </body>
 </html>
