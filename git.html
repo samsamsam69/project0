@@ -5,13 +5,19 @@
     <title>Git</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style media="screen">
+      @media (min-width:768px){body {margin: 10px 20% 0px 20%}; thead + th {width: 300px}}
+      @media (max-width: 768px) {body {margin: 10px 10% 0px 10%}; thead + th {width:248px}; th + th {width: auto}}
+
       .home_link:before {content: "Click here to "}
       .links:before {content: "Click here to learn more about "}
       .links:hover, .home_link:hover {color: deeppink}
-      body {margin: 10px 20% 0px 20%}
-      #selectors th {color:darkblue}
+
+      #GitTable th {color:darkblue}
       td {color:blue}
       td + td {color: blueviolet}
+
+      #GitTable, td, th {border: 1px solid black; border-collapse: collapse; padding: 5px;}
+      th {text-align: center;}
     </style>
   </head>
   <body>
@@ -24,7 +30,7 @@
     <p>Here are some git commands that are frequently used:</p>
     <table id="GitTable">
       <thead>
-        <th style="width: 250px">Commands</th>
+        <th>Commands</th>
         <th>Function</th>
       </thead>
       <tr>
